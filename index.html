@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        html{
+            scroll-behavior: smooth;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            text-align: center;
+            background:#41ACF1;
+            color: white;
+        }
+        
+h1{
+    width: 100%;
+    margin: 0 auto 0 auto;
+    font-family: serif;
+    color: aliceblue;
+    font-size: 50px;
+}
+        .bimg{
+            position: static;
+            background-position: center; /* Center the image */
+  background-repeat: no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+            
+        }
+
+
+        
+
+ .top-cloud{
+    position: relative;
+    right: 327px;
+ }
+.bottom-cloud{
+   position: relative;
+   right: -20px;
+    display: block;
+    
+
+    
+}
+.top-container{
+    
+   
+    margin: 0 auto;
+
+}
+.heading{
+    font-size: 90px;
+    /* //100% = 16px */
+}
+.skill-row{
+    text-align: left;
+    line-height: 2;
+    
+}
+.paragraph{
+    margin: 2.4rem;
+    font-size: 2.4rem;
+    padding: 2.4rem;
+}
+.astronaut-img{
+    height: 25%;
+    width: 25%;
+    float: left;
+    margin-right: 50px;
+
+}
+.btn{
+    text-decoration: none;
+}
+.footer-link{
+    color:#DF5B20;
+    padding: 20px;
+    text-decoration: none;
+    font-size: 20px;
+}
+.footer-link:hover{
+    color: aliceblue;
+}
+.bottom-container{
+    /* position: fixed; */
+ margin-top:20px;
+   padding: 25px 0 50px;
+   background-color:#20A4DF;
+   color: white;
+   text-align: center;
+}
+.btn {
+    padding-top:1000px  ;
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 6px 14px 11px 6px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #2045DF);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #2045DF);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #2045DF);
+  background-image: -o-linear-gradient(top, #3cb0fd, #2045DF);
+  background-image: linear-gradient(to bottom, #3cb0fd, #2045DF);
+  text-decoration: none;
+}
+#abc{
+  width:100%;
+  height:10vh;
+  background-image: url(img2.jpg);
+  background-size: cover;
+  position: fixed;
+}
+nav{
+  width: 100%;
+  height: 50px;
+  /* background-color: #0005; */
+  line-height: 50px;
+}
+nav ul{
+  float: right;
+  margin-right: 30px;
+}
+nav ul li{
+  list-style-type: none;
+  display: inline-block;
+  transition: 0.7s all;
+}
+nav ul li:hover{
+  background-color:#088;
+}
+nav ul li a{
+  text-decoration: none;
+  color: #fff;
+  padding: 30px;
+}
+
+
+.btn1 {
+  background: #3498db;
+  background-image: -webkit-linear-gradient(top, #3498db, #2980b9);
+  background-image: -moz-linear-gradient(top, #3498db, #2980b9);
+  background-image: -ms-linear-gradient(top, #3498db, #2980b9);
+  background-image: -o-linear-gradient(top, #3498db, #2980b9);
+  background-image: linear-gradient(to bottom, #3498db, #2980b9);
+  -webkit-border-radius: 28;
+  -moz-border-radius: 28;
+  border-radius: 28px;
+  font-family: Arial;
+  color: #ffffff;
+  font-size: 20px;
+  padding: 6px 14px 11px 6px;
+  text-decoration: none;
+}
+
+.btn1:hover {
+  background: #3cb0fd;
+  background-image: -webkit-linear-gradient(top, #3cb0fd, #00FFF8);
+  background-image: -moz-linear-gradient(top, #3cb0fd, #00FFF8);
+  background-image: -ms-linear-gradient(top, #3cb0fd, #00FFF8);
+  background-image: -o-linear-gradient(top, #3cb0fd, #00FFF8);
+  background-image: linear-gradient(to bottom, #3cb0fd, #00FFF8);
+  text-decoration: none;
+}
+    </style>
+    <link rel="stylesheet" href="path/to/font-awesome/css/font-awesome.min.css">
+</head>
+<body>
+    <div id="abc">
+        <nav>
+            <ul>
+             
+                <li><a href="#home">Home</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact-me">Contact Us</a></li>
+            </ul>
+        </nav>
+    </div>
+
+       <section id="home">
+        <div class="top-container">
+
+        <img class="top-cloud" src="https://static.vecteezy.com/system/resources/thumbnails/009/302/650/small/white-cloud-clipart-design-illustration-free-png.png" alt="" >
+       <p style="font-size: 40px;">Hello </p>
+        <h1 class="heading">I am sameer </h1> 
+        <div class="paragraph">A Developer</div>
+    </div>
+
+        <img class="bottom-cloud" src="https://static.vecteezy.com/system/resources/thumbnails/009/302/650/small/white-cloud-clipart-design-illustration-free-png.png" alt="" class="cartoonimg">
+    </section> 
+        <img class="bimg" src="https://png.pngtree.com/png-vector/20230225/ourmid/pngtree-transparent-cartoon-mountain-landscape-png-image_6617778.png" alt="" srcset="">
+        <div class="middle-container">
+            <div class="profile">
+              <img src="https://media.licdn.com/dms/image/D4E03AQFeWYf1KHCs4A/profile-displayphoto-shrink_400_400/0/1676696176196?e=1692230400&v=beta&t=vvIe-6VtQLXK8c-rYFP26BO7ULaJc04AbqI5fc9p-Jc" alt="" style="border-radius: 50%;height: 150px;width: 150px;">
+              <h2 class="heading">Hello.</h2>
+              <p>I am a PROFESSIONAL web-developer </p>
+            </div>
+            <hr>
+            <section id="skills">
+            <div class="skills" >
+              <h2>My Skills.</h2>
+              <div class="skill-row" style="width: 50%; display: inline-block; margin: 100px auto;">
+                <img class="astronaut-img" src="https://static-00.iconduck.com/assets.00/web-developer-illustration-503x512-mega3xxj.png" alt=""  >
+                <h3>Developer</h3>
+                <p>Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+              </div>
+              <div class="skill-row" style="width: 50%; display: inline-block; margin: 100px auto;" >
+                
+                <img src="https://media.giphy.com/media/kbXPuenSEOtidwO0FI/giphy.gif"  alt="" style="height: 25%;width: 25%; float: right;">
+                <h3>Problem solver</h3>
+                <p class="description">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+              </div>
+              <div class="skill-row" style="width: 50%; display: inline-block; margin: 100px auto;" >
+                
+                <img src="https://media0.giphy.com/media/ksE9feSa2b4V2GYwY4/200w.webp?cid=ecf05e47u8qpv6uq3nrq6d87esejnm1bnpcbqfwehoo6cu0m&ep=v1_stickers_search&rid=200w.webp&ct=ts"  alt="" style="height: 25%;width: 25%; float: left;">
+                <h3>Programmer</h3>
+                <p>Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+              </div>
+            </div>
+        </section>
+            <hr>
+
+            <section id="projects">
+            <div class="projects" >
+                <h2>projects </h2>
+                <div class="projects-row" style="width: 50%; display: inline-block; margin: 100px auto;">
+                  <img class="astronaut-img" src="https://img.icons8.com/?size=512&id=21081&format=png" alt=""  >
+                  <h3>Animated Landing Page</h3>
+                  <p style="margin-bottom: 20px;">Lorem ipsum dolor sit amet, quis in duis, iaculis id felis. Consectetuer vestibulum, nunc urna lectus, erat ligula. Hendrerit nam, lectus ante, ut lorem eros.</p>
+                  <a class="btn1" target="_blank" href="https://6483461b57770e23f22dfa1a--fluffy-scone-851382.netlify.app/#" >Live Demo</a>
+                </div>
+                <div class="projects-row" style="width: 50%; display: inline-block; margin: 100px auto;" >
+                  
+                  <img src="https://img.icons8.com/?size=512&id=15350&format=png"  alt="" style="height: 25%;width: 25%; float: right;">
+                  <h3>Weather-app</h3>
+                 
+                  <p class="description" style="width: 100%; text-align: left; margin-bottom:10px; ">Helps you to get Weather accuratly. Here we use an api solely based on javascript</p>
+                  <a class="btn1" target="_blank" href=" https://sameer1sheikh2mansoori3.github.io/weatherDekhoGuys/">Live Demo</a>
+                </div>
+                <div class="projects-row" style="width: 50%; display: inline-block; margin: 100px auto;" >
+                  
+                  <img src="https://img.icons8.com/?size=512&id=2upK8qlqCAEf&format=png"  alt="" style="height: 25%;width: 25%; float: left;">
+                  <h3>PortFolio</h3>
+                  
+                  <p style="margin-bottom:10px;">Lorem ipsum dolor sit amet, mauris sed consectetuer. Etiam et eu, bibendum interdum, lacus quis mauris. Curabitur wisi, quisque vel eu, rutrum nam.</p>
+                
+                 <a class="btn1" target="_blank" href=" https://6485c212d2a28e0ec64b0d3b--leafy-palmier-370ad2.netlify.app/">Live Demo</a>
+  
+                </div>
+              </div>
+            </section>
+              <hr>
+            <div class="contact-me">
+              <h2>Get In Touch</h2>
+              <h3 style="margin-bottom: 50px;">Lorem ipsum dolor sit amet, non elit.</h3>
+              
+              <a class="btn" target="_blank" href="mailto:sameersheikhmasoori@email.com" style="margin-bottom: 50px;">CONTACT ME</a>
+            </div>
+          </div>
+          
+          
+          <div class="bottom-container" id="contact-me">
+            <i class="fa-solid fa-code"></i>
+
+            <a class="footer-link" target="_blank"href="https://www.linkedin.com/">LinkedIn</a>
+            <a class="footer-link" target="_blank"href="https://twitter.com/">Twitter</a>
+            <a class="footer-link" target="_blank"href="https://www.google.co/">Website</a>
+            <p>© 2023 MarkOne</p>
+          </div>
+    </div>
+</body>
+</html>
